@@ -1,0 +1,6 @@
+export { default as CloseIcon } from './CloseIcon'
+export { default as ConnectIcon } from './ConnectIcon'
+export { default as DownloadIcon } from './DownloadIcon'
+export { default as ArrowRightIcon } from './ArrowRightIcon'
+export { default as DarkModeIcon } from './DarkModeIcon'
+export { default as LightModeIcon } from './LightModeIcon'

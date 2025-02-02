@@ -5,6 +5,71 @@
 * {
   font-family: Outfit;
 }
+
+@layer base {
+  h1 {
+    @apply text-5xl font-medium;
+  }
+  h2 {
+    @apply text-4xl font-medium;
+  }
+  h3 {
+    @apply text-3xl font-medium;
+  }
+  h4 {
+    @apply text-2xl font-medium;
+  }
+  h5 {
+    @apply text-xl font-medium;
+  }
+  h6 {
+    @apply text-lg font-medium;
+  }
+
+  /* a {
+    @apply font-Ovo;
+  } */
+}
+
+@layer components {
+  .base-btn {
+    @apply flex items-center gap-2 rounded-full border border-transparent px-6 py-2.5 lg:px-8;
+  }
+  .btn-outline-primary {
+    @apply base-btn border-gray-500 dark:border-white;
+  }
+  .btn-primary {
+    @apply base-btn bg-gray-800 dark:bg-white text-white dark:text-black;
+  }
+
+  .icon-btn {
+    @apply p-2 rounded-full bg-gray-600 dark:bg-gray-400 dark:bg-opacity-10 bg-opacity-10 hover:bg-opacity-15 active:bg-opacity-20;
+  }
+
+  .navbar {
+    @apply fixed top-2 left-2 right-2 z-navbar flex items-center justify-between border-[1.5px] border-transparent max-w-6xl mx-auto px-4 py-3 lg:px-6;
+  }
+  .navbar.outlined, .navbar ~ .sidebar {
+    @apply select-none rounded-xl backdrop-blur-2xl border-neutral-300/50 bg-white/80 dark:border-gray-600/40 dark:bg-dark-900/60;
+  }
+
+  .icon {
+    @apply size-8 fill-black dark:fill-white dark:stroke-white;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .shadow-hover {
+    @apply shadow-lg hover:shadow-2xl transition-shadow;
+  }
+}
+
 /* 
 :root {
   --background: #ffffff;

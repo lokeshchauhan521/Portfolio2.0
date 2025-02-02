@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import { Outfit, Ovo } from 'next/font/google'
 import './globals.css'
+import Navbar from './components/Navbar'
+import Background from './components/Background'
+import StoreProvider from './StoreProvider'
+import AppTheme from './components/AppTheme'
 
 const outfit = Outfit({
   // variable: "--font-outfit",
@@ -25,9 +29,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${outfit.className} ${ovo.className} antialiased`}>
-        {children}
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${outfit.className} ${ovo.className} antialiased leading-8 dark:text-white`}
+      >
+        <main>
+          <Background />
+          <StoreProvider>
+            <AppTheme />
+            <Navbar />
+            {children}
+          </StoreProvider>
+        </main>
       </body>
     </html>
   )

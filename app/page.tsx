@@ -1,7 +1,14 @@
+import About from './components/About'
+import Introduction from './components/Introduction'
+import Projects from './components/Projects'
+
 export default function Home() {
   return (
     <>
-      <p className="text-4xl">Hello World</p>
+      <Introduction />
+      <About />
+      <Projects />
+      {/* <Experience /> */}
     </>
   )
 }
