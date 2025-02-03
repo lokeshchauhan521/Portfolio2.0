@@ -1,26 +1,74 @@
+import TimelineItem from '@/components/TimelineItem'
 import DeveloperImg from '@/app/assets/images/developer.png'
 import Image from 'next/image'
-import { ArrowRightIcon, DownloadIcon } from './icons'
+
+type Experience = {
+  timeline: string
+  title: string
+  company: string
+  description: string[]
+}
+
+const experienceList: Experience[] = [
+  {
+    timeline: 'MAY 2021 - Present',
+    title: 'Software Developer',
+    company: 'XYZ, USA',
+    description: [
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+    ],
+  },
+  {
+    timeline: 'JAN 2020 - MAY 2021',
+    title: 'Frontend Developer',
+    company: 'ABC, London',
+    description: [
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+    ],
+  },
+  {
+    timeline: 'FEB 2016 - DEC 2019',
+    title: 'Backend Developer Developer',
+    company: 'ABC, London',
+    description: [
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+    ],
+  },
+]
 
 const Experience = () => {
   return (
-    <div className="flex flex-col items-center gap-5 justify-center h-screen w-11/12 max-w-3xl mx-auto text-center">
-      <Image src={DeveloperImg} alt="profile_pic" className="size-32" />
-      <p className="text-xl">Hi! I am Deepak Chaurasiya 👋🏻</p>
-      <p className="text-4xl">frontend web developer based in London.</p>
-      <p className="text-lg">
-        I am a frontend developer from California, USA with 10 years of
-        experience in multiple companies like Microsoft, Tesla and Apple.
+    <section id="experience" className="dashboard-section">
+      <h2 className="text mb-10">Experience</h2>
+      {experienceList.map((experience) => (
+        <ExperienceItem key={experience.timeline} experience={experience} />
+      ))}
+    </section>
+  )
+}
+
+const ExperienceItem = ({ experience }: { experience: Experience }) => {
+  return (
+    <TimelineItem
+      icon={<Image src={DeveloperImg} className="size-8" alt="company-logo" />}
+    >
+      <p className="text-xs text-neutral-600 dark:text-neutral-300">
+        {experience.timeline}
       </p>
-      <div className="flex items-center gap-4 max-sm:flex-col">
-        <a href="#contact" className="btn-primary">
-          Connect With Me <ArrowRightIcon className="size-6 fill-white" />
-        </a>
-        <a href="/resume.pdf" download className="btn-outlined-light">
-          My Resume <DownloadIcon className="size-6" />
-        </a>
-      </div>
-    </div>
+      <h5>{experience.title}</h5>
+      <p className="font-semibold mb-2">{experience.company}</p>
+      {experience.description.map((e, i) => (
+        <p key={i} className="text-neutral-600 dark:text-neutral-300">
+          • {e}
+        </p>
+      ))}
+    </TimelineItem>
   )
 }
 

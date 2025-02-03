@@ -1,19 +1,22 @@
+import Link from 'next/link'
 import DeveloperImg from '@/app/assets/images/developer.png'
 import Image from 'next/image'
+import { ArrowRightIcon } from './icons'
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="h-screen mx-auto w-full px-5 pt-24 lg:px-8 xl:px-[8%]"
-    >
-      <h2 className="text-center">Projects</h2>
-      <div className="w-full overflow-x-auto mt-12 py-8 px-4">
-        <div className="flex items-center gap-8 w-max">
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
-        </div>
+    <section id="projects" className="dashboard-section">
+      <h2 className="text mb-10">Projects</h2>
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+      </div>
+      <div className="flex-center">
+        <Link href="/projects" className="btn-primary px-16 mt-12">
+          All Projects
+          <ArrowRightIcon className="size-6 fill-white dark:fill-dark" />
+        </Link>
       </div>
     </section>
   )
@@ -21,22 +24,43 @@ const Projects = () => {
 
 const ProjectItem = () => {
   return (
-    <div className="w-72 flex flex-col items-center border shadow-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-lg md:w-80 lg:w-96">
-      <Image
-        src={DeveloperImg}
-        alt="project-imng"
-        className="h-36 w-full object-cover bg-white md:h-44 lg:h-52"
-      />
-      <div className="p-6">
-        <p className="text-lg font-medium">Admin Dashboard</p>
+    <div className="flex flex-col items-center cursor-pointer group">
+      <div className="relative bg-red size-full rounded-2xl  overflow-hidden">
+        <Image
+          src={DeveloperImg}
+          alt="project-img"
+          className="h-48 w-full object-cover group-hover:scale-105 transition-all duration-300 sm:h-44 lg:h-44"
+        />
+        <div className="absolute inset-0 size-full bg-neutral-800 bg-opacity-10" />
+      </div>
+      <div className="py-6">
+        <p className="text-xl font-medium mb-2">Admin Dashboard</p>
         <p className="text-base">
-          I am an experienced Frontend Developer with over a decade of
-          professional expertise in the field. Throughout my career, I have had
-          the privilege of collaborating with prestigious organizations,
-          contributing to their success and growth.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
+          voluptates cum asperiores delectus sint dignissimos voluptate, facere
+          sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!
         </p>
       </div>
     </div>
   )
 }
+// const ProjectItem = () => {
+//   return (
+//     <div className="w-72 flex flex-col items-center border shadow-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-lg md:w-80 lg:w-96">
+//       <Image
+//         src={DeveloperImg}
+//         alt="project-imng"
+//         className="h-36 w-full object-cover bg-white md:h-44 lg:h-52"
+//       />
+//       <div className="p-6">
+//         <p className="text-lg font-medium">Admin Dashboard</p>
+//         <p className="text-base">
+//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
+//           voluptates cum asperiores delectus sint dignissimos voluptate, facere
+//           sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!
+//         </p>
+//       </div>
+//     </div>
+//   )
+// }
 export default Projects

@@ -46,7 +46,7 @@ const Navbar = () => {
           <span className="text-xl group-hover:-rotate-90 group-hover:scale-125 transform ease-in-out duration-300">
             ✦
           </span>
-          <span className="group font-medium">Deepak</span>
+          <span className="group font-medium">VueJs</span>
         </Link>
 
         <div className="flex items-center gap-6 lg:gap-8">
@@ -75,7 +75,7 @@ const Navbar = () => {
 
       <div
         ref={sideMenuRef}
-        className="fixed top-0 bottom-0 -right-64 w-64 z-navbar transition duration-500 sidebar m-2 border shadow-md dark:shadow-dark-800"
+        className="fixed top-0 bottom-0 -right-64 w-60 z-navbar transition duration-500 sidebar m-2 border shadow-md dark:shadow-dark-800"
       >
         <button className="absolute top-4 right-4" onClick={closeSideMenu}>
           <CloseIcon className="size-10" />

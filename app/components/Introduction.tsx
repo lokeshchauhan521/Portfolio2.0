@@ -4,7 +4,7 @@ import { ArrowRightIcon, DownloadIcon } from './icons'
 
 const Introduction = () => {
   return (
-    <div className="mt-24 flex flex-col items-center gap-5 min-h-screen w-11/12 max-w-3xl mx-auto text-center">
+    <div className="mt-24 flex flex-col items-center gap-5 w-11/12 max-w-3xl mx-auto text-center">
       <Image src={DeveloperImg} alt="profile_pic" className="size-32" />
       <h1 className="">
         Hello, <br /> I&apos;m Deepak.
