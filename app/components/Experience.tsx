@@ -45,7 +45,7 @@ const experienceList: Experience[] = [
 const Experience = () => {
   return (
     <section id="experience" className="dashboard-section">
-      <h2 className="text mb-10">Experience</h2>
+      <h3 className="text mb-10">Experience</h3>
       {experienceList.map((experience) => (
         <ExperienceItem key={experience.timeline} experience={experience} />
       ))}

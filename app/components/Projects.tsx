@@ -6,7 +6,7 @@ import { ArrowRightIcon } from './icons'
 const Projects = () => {
   return (
     <section id="projects" className="dashboard-section">
-      <h2 className="text mb-10">Projects</h2>
+      <h3 className="text mb-10">Projects</h3>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectItem />
         <ProjectItem />
