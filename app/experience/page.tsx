@@ -30,22 +30,22 @@ const experienceList: Experience[] = [
       'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
     ],
   },
-  //   {
-  //     timeline: 'FEB 2016 - DEC 2019',
-  //     title: 'Backend Developer Developer',
-  //     company: 'ABC, London',
-  //     description: [
-  //       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-  //       'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-  //       'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-  //     ],
-  //   },
+  {
+    timeline: 'FEB 2016 - DEC 2019',
+    title: 'Backend Developer Developer',
+    company: 'ABC, London',
+    description: [
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+    ],
+  },
 ]
 
 const Experience = () => {
   return (
-    <section id="experience" className="dashboard-section">
-      <h3 className="text mb-10">Experience</h3>
+    <section className="max-w-4xl mx-auto pt-12 pb-4 px-6">
+      <h2 className="mb-12">Experience</h2>
       {experienceList.map((experience) => (
         <ExperienceItem key={experience.timeline} experience={experience} />
       ))}
@@ -63,11 +63,13 @@ const ExperienceItem = ({ experience }: { experience: Experience }) => {
       </p>
       <h5>{experience.title}</h5>
       <p className="font-semibold mb-2">{experience.company}</p>
-      {experience.description.map((e, i) => (
-        <p key={i} className="text-neutral-600 dark:text-neutral-300">
-          • {e}
-        </p>
-      ))}
+      <ul className="list-disc ms-4">
+        {experience.description.map((e, i) => (
+          <li key={i}>
+            <p className="text-neutral-600 dark:text-neutral-300">{e}</p>
+          </li>
+        ))}
+      </ul>
     </TimelineItem>
   )
 }

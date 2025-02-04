@@ -47,7 +47,7 @@
   }
 
   .navbar {
-    @apply fixed top-2 left-2 right-2 z-navbar flex items-center justify-between border-transparent max-w-6xl mx-auto px-4 py-3 lg:px-6;
+    @apply fixed top-2 left-2 right-2 z-navbar flex items-center justify-between border-transparent max-w-6xl mx-auto px-4 py-3 transition-all duration-100 lg:px-6;
   }
   .navbar.outlined,
   .navbar ~ .sidebar {
@@ -79,10 +79,6 @@
 
   .border-theme {
     @apply border-[1.5px] border-neutral-300/50 dark:border-dark-600/40;
-  }
-
-  .text-light {
-    @apply text-neutral-600 dark:text-neutral-300;
   }
 }
 

@@ -58,10 +58,10 @@ const Navbar = () => {
               <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link href="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <Link href="/experience">Experience</Link>
             </li>
           </ul>
           <button className="icon-btn" onClick={toggleTheme}>
@@ -82,9 +82,6 @@ const Navbar = () => {
         </button>
         <ul className="h-full flex flex-col items-start justify-center gap-6 text-lg py-3 px-8 ">
           <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
             <Link href="/" onClick={closeSideMenu}>
               Home
             </Link>
@@ -95,20 +92,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#projects" onClick={closeSideMenu}>
+            <Link href="/projects" onClick={closeSideMenu}>
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#experience" onClick={closeSideMenu}>
+            <Link href="/experience" onClick={closeSideMenu}>
               Experience
-            </a>
+            </Link>
           </li>
-          {/* <li>
-            <a href="#home" onClick={closeSideMenu}>
-              Contact Me
-            </a>
-          </li> */}
         </ul>
       </div>
     </>

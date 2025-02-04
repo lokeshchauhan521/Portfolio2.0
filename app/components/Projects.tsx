@@ -44,23 +44,5 @@ const ProjectItem = () => {
     </div>
   )
 }
-// const ProjectItem = () => {
-//   return (
-//     <div className="w-72 flex flex-col items-center border shadow-sm rounded-xl overflow-hidden cursor-pointer hover:shadow-lg md:w-80 lg:w-96">
-//       <Image
-//         src={DeveloperImg}
-//         alt="project-imng"
-//         className="h-36 w-full object-cover bg-white md:h-44 lg:h-52"
-//       />
-//       <div className="p-6">
-//         <p className="text-lg font-medium">Admin Dashboard</p>
-//         <p className="text-base">
-//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
-//           voluptates cum asperiores delectus sint dignissimos voluptate, facere
-//           sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!
-//         </p>
-//       </div>
-//     </div>
-//   )
-// }
+
 export default Projects

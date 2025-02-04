@@ -9,7 +9,7 @@ const Introduction = () => {
       <h1 className="">
         Hello, <br /> I&apos;m Deepak.
       </h1>
-      <p className="text-2xl">Software engineer based in India.</p>
+      <p className="text-2xl">Software Engineer based in India.</p>
       {/* <p className="text-lg">
         I am a frontend developer from California, USA with 10 years of
         experience in multiple companies like Microsoft, Tesla and Apple.
