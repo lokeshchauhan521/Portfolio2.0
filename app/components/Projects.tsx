@@ -25,13 +25,13 @@ const Projects = () => {
 const ProjectItem = () => {
   return (
     <div className="flex flex-col items-center cursor-pointer group">
-      <div className="relative bg-red size-full rounded-2xl  overflow-hidden">
+      <div className="relative bg-red size-full rounded-2xl  overflow-hidden bg-white">
         <Image
           src={DeveloperImg}
           alt="project-img"
           className="h-48 w-full object-cover group-hover:scale-105 transition-all duration-300 sm:h-44 lg:h-44"
         />
-        <div className="absolute inset-0 size-full bg-neutral-800 bg-opacity-10" />
+        <div className="absolute inset-0 size-full bg-neutral-800 bg-opacity-30 group-hover:bg-opacity-0 transition-all duration-300" />
       </div>
       <div className="py-6">
         <p className="text-xl font-medium mb-2">Admin Dashboard</p>

@@ -52,10 +52,10 @@ const Navbar = () => {
         <div className="flex items-center gap-6 lg:gap-8">
           <ul className="flex items-center gap-6 text-lg max-lg:hidden">
             <li>
-              <a href="#home">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
               <a href="#projects">Projects</a>
@@ -82,14 +82,17 @@ const Navbar = () => {
         </button>
         <ul className="h-full flex flex-col items-start justify-center gap-6 text-lg py-3 px-8 ">
           <li>
-            <a href="#home" onClick={closeSideMenu}>
-              Home
-            </a>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <a href="#about" onClick={closeSideMenu}>
-              About Me
-            </a>
+            <Link href="/" onClick={closeSideMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" onClick={closeSideMenu}>
+              About
+            </Link>
           </li>
           <li>
             <a href="#projects" onClick={closeSideMenu}>

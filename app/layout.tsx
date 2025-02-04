@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Background from './components/Background'
 import StoreProvider from './StoreProvider'
 import AppTheme from './components/AppTheme'
+import Footer from './components/Footer'
 
 const outfit = Outfit({
   // variable: "--font-outfit",
@@ -38,7 +39,8 @@ export default function RootLayout({
           <StoreProvider>
             <AppTheme />
             <Navbar />
-            {children}
+            <div className="min-h-[calc(100vh-180px)]">{children}</div>
+            <Footer />
           </StoreProvider>
         </main>
       </body>

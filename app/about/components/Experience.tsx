@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import TimelineItem from '@/components/TimelineItem'
 import DeveloperImg from '@/app/assets/images/developer.png'
-import Image from 'next/image'
 
 type Experience = {
   timeline: string
@@ -30,16 +30,16 @@ const experienceList: Experience[] = [
       'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
     ],
   },
-  {
-    timeline: 'FEB 2016 - DEC 2019',
-    title: 'Backend Developer Developer',
-    company: 'ABC, London',
-    description: [
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-    ],
-  },
+  //   {
+  //     timeline: 'FEB 2016 - DEC 2019',
+  //     title: 'Backend Developer Developer',
+  //     company: 'ABC, London',
+  //     description: [
+  //       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+  //       'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+  //       'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+  //     ],
+  //   },
 ]
 
 const Experience = () => {
