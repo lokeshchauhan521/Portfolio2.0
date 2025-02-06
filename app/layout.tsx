@@ -34,15 +34,13 @@ export default function RootLayout({
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 dark:text-white`}
       >
-        <main>
-          <Background />
-          <StoreProvider>
-            <AppTheme />
-            <Navbar />
-            <div className="min-h-[calc(100vh-180px)]">{children}</div>
-            <Footer />
-          </StoreProvider>
-        </main>
+        <Background />
+        <StoreProvider>
+          <AppTheme />
+          <Navbar />
+          <main className="min-h-[calc(100vh-180px)] py-12">{children}</main>
+          <Footer />
+        </StoreProvider>
       </body>
     </html>
   )

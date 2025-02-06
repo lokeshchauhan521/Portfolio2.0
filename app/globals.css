@@ -63,7 +63,11 @@
   }
 
   .chip {
-    @apply inline-flex items-center gap-2 rounded-full px-2 py-2 border-2 border-blue-500;
+    @apply inline-flex items-center gap-2 rounded-full px-2 py-2 border-2 border-blue-500 sm:text-lg;
+  }
+
+  .timeline-item {
+    @apply relative ms-6 pb-10 border-theme !border-[0] !border-l-[1.5px] last:border-none;
   }
 }
 
@@ -74,11 +78,8 @@
   .flex-between {
     @apply flex items-center justify-between;
   }
-  .text-balance {
-    text-wrap: balance;
-  }
-  .shadow-hover {
-    @apply shadow-lg hover:shadow-2xl transition-shadow;
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
   }
 
   .border-theme {

@@ -50,5 +50,11 @@ export default {
     backdropBlur: true,
   },
   darkMode: 'class',
-  plugins: [],
+  plugins: [
+    function ({ addVariant }: { addVariant: any }) {
+      addVariant('not-first-child', '&:not(:first-child)')
+      addVariant('not-last-child', '&:not(:last-child)')
+      addVariant('first-child', '& > *:first-child')
+    },
+  ],
 } satisfies Config
