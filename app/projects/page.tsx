@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import DeveloperImg from '@/app/assets/images/developer.png'
+import DeveloperImg from '@/app/assets/images/code.png'
 
 export default function Projects() {
   return (
     <>
-      <section className="max-w-4xl mx-auto pt-12 pb-4 px-6">
+      <section className="max-w-4xl mx-auto pb-4 px-6">
         <h2>Projects</h2>
         <div className="flex flex-col gap-4 mt-6">
           <ProjectItem />

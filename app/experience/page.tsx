@@ -17,22 +17,22 @@ const experienceList: Experience[] = [
     imgPath: CompanyImg1,
     timeline: 'Feb 2024 - Present',
     title: 'Software Developer - Frontend',
-    company: 'BYJUs, Gurugram, India',
+    company: 'NMG Technologies, Gurugram',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'Developed Yew, a responsive web app using React.js, Redux, Tailwind CSS, and TypeScript, following industry best practices.',
+      'Optimized performance, cutting initial load time by 80% with code splitting, lazy loading, and dynamic imports.',
+      'Resolved 18+ issues on a marketing intelligence platform with a micro-frontend architecture, resulting in a 40% performance boost.',
     ],
   },
   {
     imgPath: CompanyImg2,
     timeline: 'Feb 2023 - Jan 2024',
     title: 'Software Devloper',
-    company: 'BYJUs, Gurugram, India',
+    company: 'BYJUs, Gurugram',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'Built core UI components and integrated key APIs for a CRM platform using ReactJS, HTML, CSS, and JavaScript, ensuring a seamless, responsive user experience and efficient data flow.',
+      'Optimized a Node.js-based Loan Management System with a microservices architecture, leveraging Redis, PostgreSQL, MongoDB, and AWS, resolving critical issues and improving processing efficiency by 25%.',
+      'Automated end-to-end testing with Selenium, TestNG, and Java, achieving 90% test coverage and improving software reliability.',
     ],
   },
   {
@@ -41,16 +41,16 @@ const experienceList: Experience[] = [
     title: 'Application Developer Intern',
     company: 'DGTLmart',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
-      'Ipsum dolor sit amet, consectetur adipisicing elit. Autem dictarepudiandae eius quasi ullam quidem sunt alias aperiam eum!',
+      'Developed and implemented interactive in-app games, quizzes and a virtual assistant for TreeCampus, a Flutter-based digital learning application with 100,000+ downloads.',
+      'Designed, built, and deployed an interactive digital business card website using React.js, HTML, SCSS, and JavaScript.',
+      'Automated push notifications and data import/export by developing a Node.js backend service integrated with Firebase, improving efficiency and user engagement.',
     ],
   },
 ]
 
 const Experience = () => {
   return (
-    <section className="max-w-4xl mx-auto pt-12 pb-4 px-6">
+    <section className="max-w-4xl mx-auto pb-4 px-6">
       <h2 className="mb-12">Experience</h2>
       {experienceList.map((experience, index) => (
         <ExperienceItem
@@ -75,7 +75,7 @@ const ExperienceItem = ({
       icon={
         <Image
           src={experience.imgPath}
-          className="size-8 rounded-full"
+          className="size-9 rounded-full"
           alt="company-logo"
         />
       }

@@ -5,7 +5,7 @@ import DeveloperIMg from '@/app/assets/images/developer2.png'
 export default function About() {
   return (
     <>
-      <section className="max-w-4xl mx-auto pt-12 pb-4 px-6">
+      <section className="max-w-4xl mx-auto pb-4 px-6">
         <h2>About Me</h2>
         <div className="mt-6">
           <div>
