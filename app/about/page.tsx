@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Skills from './components/Skills'
+import DeveloperIMg from '@/app/assets/images/developer2.png'
 
 export default function About() {
   return (
@@ -7,21 +9,23 @@ export default function About() {
         <h2>About Me</h2>
         <div className="mt-6">
           <div>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Expedita, porro necessitatibus. Quod nihil eius, quam odit, natus
-              aspernatur iure provident cupiditate repellat tenetur aliquid
-              similique. Eaque deserunt harum modi est. Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Sed ipsa, similique nesciunt
-              rem culpa deleniti mollitia voluptatibus quibusdam, id expedita
-              optio excepturi molestias eum ab natus, corporis sequi et fugiat!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              similique magnam sit qui hic? Perspiciatis veniam, nisi eveniet
-              ab, saepe expedita blanditiis nihil, eaque repellat facere
-              officiis dolore incidunt repudiandae?
+            <p className="text-lg text-light">
+              Hello 👋 I&apos;m Deepak, a Software Engineer with 2+ years of
+              experience in frontend, micro-frontend, backend, and
+              microservices. I enjoy solving complex programming challenges,
+              staying ahead with the latest technologies, and building scalable,
+              high-performance applications. Adaptable, quick to learn, and
+              thrive in dynamic environments. I actively contribute to
+              collaborative teams, ensuring smooth communication and teamwork to
+              achieve project goals, and I am always up for a challenge.
             </p>
           </div>
         </div>
+        <Image
+          src={DeveloperIMg}
+          alt="about"
+          className="mt-8 rounded-2xl h-52 w-full object-cover sm:h-80"
+        />
         <Skills />
       </section>
     </>

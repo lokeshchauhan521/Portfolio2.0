@@ -58,15 +58,13 @@ const ExperienceItem = ({ experience }: { experience: Experience }) => {
     <TimelineItem
       icon={<Image src={DeveloperImg} className="size-8" alt="company-logo" />}
     >
-      <p className="text-xs text-neutral-600 dark:text-neutral-300">
-        {experience.timeline}
-      </p>
+      <p className="text-xs text-light">{experience.timeline}</p>
       <h5>{experience.title}</h5>
       <p className="font-semibold mb-2">{experience.company}</p>
       <ul className="list-disc ms-4">
         {experience.description.map((e, i) => (
           <li key={i}>
-            <p className="text-neutral-600 dark:text-neutral-300">{e}</p>
+            <p className="text-light">{e}</p>
           </li>
         ))}
       </ul>

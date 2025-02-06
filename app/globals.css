@@ -84,6 +84,10 @@
   .border-theme {
     @apply border-[1.5px] border-neutral-300/50 dark:border-dark-600/40;
   }
+
+  .text-light {
+    @apply text-neutral-600 dark:text-neutral-300;
+  }
 }
 
 /* 

@@ -85,7 +85,7 @@ export const getSkillList = (theme: 'light' | 'dark') => {
       imgPath: theme !== 'light' ? ExpressLightImg : ExpressDarkImg,
     },
     {
-      label: 'FastapiImg',
+      label: 'FastAPI',
       imgPath: FastapiImg,
     },
     {
