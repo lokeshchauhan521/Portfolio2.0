@@ -20,8 +20,14 @@ const ovo = Ovo({
 })
 
 export const metadata: Metadata = {
-  title: 'Nextjs App',
-  description: '',
+  title: 'Deepak Chaurasiya',
+  description: 'Software Engineer | Building Scalable & Efficient Software',
+  icons: [
+    {
+      rel: 'icon',
+      url: '/favicon.png',
+    },
+  ],
 }
 
 export default function RootLayout({
