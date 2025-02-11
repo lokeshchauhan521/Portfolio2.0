@@ -10,14 +10,31 @@ export default function About() {
         <div className="mt-6">
           <div>
             <p className="text-lg text-light">
-              Hello 👋 I&apos;m Deepak, a Software Engineer with 2+ years of
-              experience in frontend, micro-frontend, backend, and
-              microservices. I enjoy solving complex programming challenges,
-              staying ahead with the latest technologies, and building scalable,
-              high-performance applications. Adaptable, quick to learn, and
-              thrive in dynamic environments. I actively contribute to
-              collaborative teams, ensuring smooth communication and teamwork to
-              achieve project goals, and I am always up for a challenge.
+            Hello 👋, I'm Lokesh!<br/> 
+            A Software Engineer with 2+ years of experience in backend development
+            and microservices architecture. I specialize in designing and building  
+            scalable, high-performance applications using Python (FastAPI, Flask, Django)
+            and implementing robust, distributed systems.<br/> 
+
+            🛠️ Tech Stack & Expertise: <br/> 
+            ✅ Backend:Python (FastAPI, Flask, Django)  <br/> 
+            ✅ Databases: PostgreSQL, MySQL, Redis, Elasticsearch <br/>  
+            ✅ Messaging & Streaming: Apache, Kafka, RabbitMQ  <br/> 
+            ✅ DevOps & Containerization: Docker <br/> 
+            ✅ Cloud & Infrastructure: AWS (S3)  <br/> 
+            ✅ Caching & Performance Optimization: Redis, Celery  <br/> 
+            ✅ Security & Authentication: OAuth, JWT, API Gateway  <br/> 
+
+            I thrive on solving complex programming challenges, optimizing 
+            system efficiency, and ensuring high availability in production 
+            environments. Passionate about system design, clean code, and 
+            distributed architectures, I actively contribute to collaborative 
+            teams, ensuring seamless integration and smooth project execution. <br/> 
+
+            Always up for a challenge, I continuously push myself to enhance 
+            backend architectures, improve system performance, and stay ahead 
+            with the latest advancements in backend technologies. 🚀  
+
             </p>
           </div>
         </div>

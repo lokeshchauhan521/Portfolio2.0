@@ -7,7 +7,7 @@ const Introduction = () => {
     <section className="dashboard-section flex flex-col items-center gap-5 text-center max-sm:pt-8">
       <Image src={DeveloperImg} alt="profile_pic" className="size-32" />
       <h1 className="mt-2">
-        Hello, <br /> I&apos;m Deepak.
+        Hello, <br /> I&apos;m Lokesh.
       </h1>
       <p className="text-2xl leading-9 text-light">
         Software Engineer | Building Scalable <br />& Efficient Software
