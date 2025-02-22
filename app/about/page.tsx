@@ -14,16 +14,17 @@ export default function About() {
             A Software Engineer with 2+ years of experience in backend development
             and microservices architecture. I specialize in designing and building  
             scalable, high-performance applications using Python (FastAPI, Flask, Django)
-            and implementing robust, distributed systems.<br/> 
+            and implementing robust, distributed systems.<br/> <br/> 
 
             🛠️ Tech Stack & Expertise: <br/> 
-            ✅ Backend:Python (FastAPI, Flask, Django)  <br/> 
-            ✅ Databases: PostgreSQL, MySQL, Redis, Elasticsearch <br/>  
-            ✅ Messaging & Streaming: Apache, Kafka, RabbitMQ  <br/> 
-            ✅ DevOps & Containerization: Docker <br/> 
-            ✅ Cloud & Infrastructure: AWS (S3)  <br/> 
-            ✅ Caching & Performance Optimization: Redis, Celery  <br/> 
-            ✅ Security & Authentication: OAuth, JWT, API Gateway  <br/> 
+            🚀 Backend: Python (FastAPI, Flask, Django) <br/>  
+            🗄️ Databases: PostgreSQL, MySQL, Redis, Elasticsearch <br/>  
+            📩 Messaging & Streaming: Apache Kafka, RabbitMQ <br/>  
+            🐳 DevOps & Containerization: Docker <br/>  
+            ☁️ Cloud & Infrastructure: AWS (S3) <br/>  
+            ⚡ Caching & Performance Optimization: Redis, Celery <br/>  
+            🔒 Security & Authentication: OAuth, JWT, API Gateway <br/>  
+            <br/> 
 
             I thrive on solving complex programming challenges, optimizing 
             system efficiency, and ensuring high availability in production 

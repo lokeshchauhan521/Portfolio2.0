@@ -1,13 +1,13 @@
-import DeveloperImg from '@/app/assets/images/developer.png'
+import DeveloperImg from '@/app/assets/images/developer.jpeg'
 import Image from 'next/image'
 import { ArrowRightIcon, DownloadIcon } from './icons'
 
 const Introduction = () => {
   return (
     <section className="dashboard-section flex flex-col items-center gap-5 text-center max-sm:pt-8">
-      <Image src={DeveloperImg} alt="profile_pic" className="size-32" />
+      <Image src={DeveloperImg} alt="profile_pic" className="size-32 rounded-full" />
       <h1 className="mt-2">
-        Hello, <br /> I&apos;m Lokesh.
+        Hello 👋 <br /> I&apos;m Lokesh.
       </h1>
       <p className="text-2xl leading-9 text-light">
         Software Engineer | Building Scalable <br />& Efficient Software
@@ -17,7 +17,7 @@ const Introduction = () => {
           Connect
           <ArrowRightIcon className="size-6 fill-white dark:fill-dark" />
         </a>
-        <a href="/resume.pdf" download className="btn-outline-primary">
+        <a href="/lokeshresume.pdf" download className="btn-outline-primary">
           Resume <DownloadIcon className="size-6" />
         </a>
       </div>
