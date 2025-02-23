@@ -10,7 +10,7 @@ const Introduction = () => {
         Hello 👋 <br /> I&apos;m Lokesh.
       </h1>
       <p className="text-2xl leading-9 text-light">
-        Software Engineer | Building Scalable <br />& Efficient Software
+      Software Engineer | Crafting Scalable <br/>& High-Performance Solutions
       </p>
       <div className="flex items-center gap-4 py-8 max-sm:flex-col">
         <a href="#contact" className="btn-primary">

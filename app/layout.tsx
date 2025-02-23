@@ -21,7 +21,7 @@ const ovo = Ovo({
 
 export const metadata: Metadata = {
   title: 'Lokesh Chauhan',
-  description: 'Software Engineer | Building Scalable & Efficient Software',
+  description: 'Software Engineer | Crafting Scalable & High-Performance Solutions',
   icons: [
     {
       rel: 'icon',
