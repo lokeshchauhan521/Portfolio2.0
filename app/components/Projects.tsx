@@ -36,7 +36,7 @@ const Projects = () => {
       description: 'A mobile application designed for real-time bus tracking and route management. Users can check live bus locations, estimated arrival times, and receive notifications about delays. The app provides a seamless experience for commuters while enabling transport operators to manage fleets and schedules efficiently.',
     },
     {
-      imgPath: theme !== 'light' ? LudoLight : LudoDark,
+      imgPath: theme !== 'light' ? foodLight : foodDark,
       name: 'Food Delivery Ecommerce Application',
       description: 'A web-based food delivery platform that connects users with a variety of restaurants. Customers can browse menus, place orders, and track deliveries in real time. The app offers a smooth checkout experience, multiple payment options, and restaurant management tools for efficient order handling and timely deliveries.',
     },
