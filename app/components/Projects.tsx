@@ -74,7 +74,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
       </div>
       <div className="py-6">
         <p className="text-xl font-medium line-clamp-1 mb-2">{project.name}</p>
-        <p className="text-base line-clamp-3">
+        <p className="text-base line-clamp-4">
           {project.description}
         </p>
       </div>
