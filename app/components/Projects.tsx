@@ -1,7 +1,15 @@
+'use client'
 import Link from 'next/link'
 import CodeImg from '@/app/assets/images/code.png'
+import LudoDark from '@/app/assets/images/LudoDark.webp'
+import LudoLight from '@/app/assets/images/LudoLight.webp'
+import BusDark from '@/app/assets/images/busDark.webp'
+import BusLight from '@/app/assets/images/busLight.webp'
+import foodLight from '@/app/assets/images/foodLight.webp'
+import foodDark from '@/app/assets/images/foodDark.webp'
 import Image, { StaticImageData } from 'next/image'
 import { ArrowRightIcon } from './icons'
+import { useAppSelector, useMounted } from '@/lib/hooks'
 
 type Project = {
   imgPath: StaticImageData
@@ -9,30 +17,32 @@ type Project = {
   description: string
 }
 
-const projects: Project[] = [
-  {
-    imgPath: CodeImg,
-    name: 'Ludo Multiplayer',
-    description: '',
-  },
-  {
-    imgPath: CodeImg,
-    name: 'Bus Tracking Application',
-    description: '',
-  },
-  {
-    imgPath: CodeImg,
-    name: 'Food Delivery Ecommerce Application',
-    description: '',
-  },
-  // {
-  //   imgPath: CodeImg,
-  //   name: 'Pet Adopt and Finder',
-  //   description: '',
-  // },
-]
+
+
 
 const Projects = () => {
+  const theme = useAppSelector((state) => state.theme.theme)
+  const mounted = useMounted()
+  if (!mounted) return;
+  const projects: Project[] = [
+    {
+      imgPath: theme !== 'light' ? LudoLight : LudoDark,
+      name: 'Ludo Multiplayer',
+      description: 'An engaging online multiplayer board game that allows players to connect and compete in real time. Featuring smart matchmaking, in-game chat, and a fair play system, the game ensures a smooth and immersive experience with scalable backend support for handling multiple concurrent users.',
+    },
+    {
+      imgPath: theme !== 'light' ? BusLight : BusDark,
+      name: 'Bus Tracking Application',
+      description: 'A mobile application designed for real-time bus tracking and route management. Users can check live bus locations, estimated arrival times, and receive notifications about delays. The app provides a seamless experience for commuters while enabling transport operators to manage fleets and schedules efficiently.',
+    },
+    {
+      imgPath: theme !== 'light' ? LudoLight : LudoDark,
+      name: 'Food Delivery Ecommerce Application',
+      description: 'A web-based food delivery platform that connects users with a variety of restaurants. Customers can browse menus, place orders, and track deliveries in real time. The app offers a smooth checkout experience, multiple payment options, and restaurant management tools for efficient order handling and timely deliveries.',
+    },
+  ];
+  
+  
   return (
     <section id="projects" className="dashboard-section">
       <h3 className="mb-10">Projects</h3>
@@ -65,9 +75,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
       <div className="py-6">
         <p className="text-xl font-medium line-clamp-1 mb-2">{project.name}</p>
         <p className="text-base line-clamp-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
-          voluptates cum asperiores delectus sint dignissimos voluptate, facere
-          sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!
+          {project.description}
         </p>
       </div>
     </div>

@@ -1,8 +1,18 @@
+'use client'
 import Image from 'next/image'
 import Skills from './components/Skills'
-import DeveloperIMg from '@/app/assets/images/developer2.png'
+// import DeveloperIMg from '@/app/assets/images/developer2.png'
+import DevDark from '@/app/assets/images/test.webp'
+import DevLight from '@/app/assets/images/test1.webp'
+import { useAppSelector, useMounted } from '@/lib/hooks'
+
+
+
 
 export default function About() {
+  const theme = useAppSelector((state) => state.theme.theme)
+  const mounted = useMounted()
+  if (!mounted) return;
   return (
     <>
       <section className="max-w-4xl mx-auto pb-4 px-6">
@@ -10,7 +20,7 @@ export default function About() {
         <div className="mt-6">
           <div>
             <p className="text-lg text-light">
-            Hello 👋, I'm Lokesh!<br/> 
+            Hello, I'm Lokesh!<br/> 
             A Software Engineer with 2+ years of experience in backend development
             and microservices architecture. I specialize in designing and building  
             scalable, high-performance applications using Python (FastAPI, Flask, Django)
@@ -40,7 +50,7 @@ export default function About() {
           </div>
         </div>
         <Image
-          src={DeveloperIMg}
+          src={theme === "dark" ? DevDark : DevLight}
           alt="about"
           className="mt-8 rounded-2xl h-52 w-full object-cover sm:h-80"
         />
