@@ -8,7 +8,6 @@ import BusLight from '@/app/assets/images/busLight.webp'
 import foodLight from '@/app/assets/images/foodLight.webp'
 import foodDark from '@/app/assets/images/foodDark.webp'
 import Image, { StaticImageData } from 'next/image'
-import { ArrowRightIcon } from '@/app/components/icons'
 import { useAppSelector, useMounted } from '@/lib/hooks'
 
 type Project = {
@@ -18,12 +17,9 @@ type Project = {
 }
 
 
-
-
 const Projects = () => {
   const theme = useAppSelector((state) => state.theme.theme)
   const mounted = useMounted()
-  const [isExpanded, setIsExpanded] = useState(false)
   if (!mounted) return;
   const projects: Project[] = [
     {
@@ -45,18 +41,12 @@ const Projects = () => {
   
   
   return (
-    <section id="projects" className="dashboard-section">
+    <section id="projects" className="dashboard-section mt-[-100px]">
       <h3 className="mb-10">Projects</h3>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <ProjectItem key={project.name} project={project} />
         ))}
-      </div>
-      <div className="flex-center">
-        <Link href="/projects" className="btn-primary px-16 mt-12">
-          All Projects
-          <ArrowRightIcon className="size-6 fill-white dark:fill-dark" />
-        </Link>
       </div>
     </section>
   )

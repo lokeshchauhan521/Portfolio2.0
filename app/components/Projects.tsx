@@ -45,7 +45,7 @@ const Projects = () => {
   
   return (
     <section id="projects" className="dashboard-section">
-      <h3 className="mb-10">Projects</h3>
+      <h3 className="mb-20">Projects</h3>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <ProjectItem key={project.name} project={project} />
