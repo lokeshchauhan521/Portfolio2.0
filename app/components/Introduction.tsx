@@ -5,7 +5,7 @@ import { ArrowRightIcon, DownloadIcon } from './icons'
 const Introduction = () => {
   return (
     <section className="dashboard-section flex flex-col items-center gap-5 text-center max-sm:pt-8">
-      <Image src={DeveloperImg} alt="profile_pic" className="size-32 rounded-full" />
+      <Image src={DeveloperImg} alt="profile_pic" className="size-32 rounded-full mt-[-100px]" />
       <h1 className="mt-2">
         Hello 👋 <br /> I&apos;m Lokesh.
       </h1>
