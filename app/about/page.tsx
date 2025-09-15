@@ -16,7 +16,7 @@ export default function About() {
   return (
     <>
       <section className="max-w-4xl mx-auto pb-4 px-6">
-        <h2>About Me</h2>
+        <h2>About Me...</h2>
         <div className="mt-6">
           <div>
             <p className="text-lg text-light">
